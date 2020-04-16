@@ -21,7 +21,7 @@ UNIFORM_DISTRIB = [INSERT, REMOVE, SEARCH, UPDATE]
 
 COMMAND_LIST = UNIFORM_DISTRIB
 
-ERROR_RATE = 0.33  # 1%
+ERROR_RATE = 0.0 # 1%
 
 # per char [] > 64
 if __name__ == "__main__":
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
         elif state == INSERT:
 
-            student_id = random.randint(202000000, 202099999)
+            student_id = random.randint(201400000, 201499999)
             if (student_id in id_set) or len(id_set) > MAX_NR_ENTRY:
                 state = (
                     random.sample(
